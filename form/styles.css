@@ -1,0 +1,134 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.table-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.actions a {
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.actions a.edit {
+    background-color: #007BFF;
+}
+
+.actions a.delete {
+    background-color: #DC3545;
+}
+
+.actions a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    .form-container, .table-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
